@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.wrapper {
+  /* max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 240px; */
+  margin: 0 240px;
+  /* width: 1000px;*/
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+}
+
+.logo a {
+  font-family: "Roboto Slab";
+  font-size: 27px;
+  font-weight: 400;
+  color: #1c1c1c;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 26px 26px;
+}
+
+.nav__links li a {
+  font-family: "Roboto";
+  font-size: 15px;
+  color: #222222;
+}
+
+.hero {
+  display: flex;
+  height: 430px;
+  background: url("img/hero_bg.png");
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .hero-bg {
+  width: 100%;
+}
+
+.hero-image {
+  max-width: 460px;
+  max-height: 290px;
+}
+
+.hero-info {
+  height: 260px;
+  width: 480px;
+}
+
+.hero-info h1 {
+  font-family: "Roboto";
+  font-size: 38px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.hero-info p {
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.hero-info .btn-1 {
+  font-family: "Roboto Slab";
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
+  padding: 10px 20px;
+  background-color: #000;
+  border: none;
+  border-radius: 5px;
+  margin-right: 15px;
+  text-align: center;
+}
+
+.hero-info .btn-2 {
+  font-family: "Roboto Slab";
+  font-size: 16px;
+  line-height: 22px;
+  border: none;
+  color: black;
+}
+
+.sponsors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 145px;
+  background: #3e5c50;
+  margin-bottom: 70px;
+}
+
+.sponsors p {
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+  opacity: 0.25;
+  margin-top: 26px;
+}
+
+.sponsors img {
+  margin-bottom: 38px;
+  height: 55px;
+  width: 900px;
+}
+
+.sync-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+.sync-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 920px;
+  max-height: 920px;
+}
+
+.sync-container h2 {
+  font-family: "Roboto";
+  font-size: 29px;
+  font-weight: 400;
+  line-height: 36px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.sync-container .sync__label {
+  font-family: "Roboto";
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #333333;
+  margin-bottom: 70px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.box .sync1-image {
+  width: 460px;
+  height: 293px;
+}
+
+.box-content {
+  margin-bottom: 15px;
+}
+
+.box-content img {
+  height: 30px;
+  width: 30px;
+  margin-bottom: 10px;
+}
+
+.box-content h3 {
+  font-family: "Roboto";
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #333333;
+
+  margin-bottom: 20px;
+}
+
+.box-content p {
+  max-width: 380px;
+  height: 55px;
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.box-reverse {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-direction: row-reverse;
+}
+
+.box-reverse-content {
+  margin-bottom: 15px;
+}
+
+.box-reverse-content img {
+  height: 30px;
+  width: 30px;
+  margin-bottom: 10px;
+}
+
+.box-reverse-content h3 {
+  font-family: "Roboto";
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #333333;
+
+  margin-bottom: 20px;
+}
+
+.box-reverse-content p {
+  max-width: 380px;
+  height: 55px;
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.box-reverse .sync1-image {
+  width: 460px;
+  height: 293px;
+  margin-left: 40px;
+}
+.box-reverse {
+  margin-bottom: 70px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+
+.cards h4 {
+  font-family: "Roboto";
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #333333;
+}
+.cards p {
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #333333;
+
+  max-width: 197px;
+  max-height: 88px;
+}
+
+.cards .card img {
+  margin-bottom: 10px;
+}
+
+.cards .card h4 {
+  margin-bottom: 17px;
+}
