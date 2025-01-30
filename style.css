@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   margin: 0;
@@ -47,19 +48,22 @@
 
 .hero {
   display: flex;
-  height: 430px;
-  background: url("img/hero_bg.png");
   justify-content: center;
   align-items: center;
+  background: url("img/hero_bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 70px 0;
 }
 
 .hero .hero-bg {
   width: 100%;
 }
 
-.hero-image {
-  max-width: 460px;
-  max-height: 290px;
+.hero-image img {
+  width: 460px;
+  height: 270px;
 }
 
 .hero-info {
@@ -72,7 +76,7 @@
   font-size: 38px;
   font-weight: 400;
   color: #fff;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 
 .hero-info p {
@@ -80,7 +84,7 @@
   font-size: 20px;
   font-weight: 400;
   color: #fff;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .hero-info .btn-1 {
@@ -91,7 +95,7 @@
   padding: 10px 20px;
   background-color: #000;
   border: none;
-  border-radius: 5px;
+  border-radius: 3px;
   margin-right: 15px;
   text-align: center;
 }
@@ -171,7 +175,7 @@
 
 .box .sync1-image {
   width: 460px;
-  height: 293px;
+  height: 270px;
 }
 
 .box-content {
@@ -241,11 +245,12 @@
   color: #333333;
 }
 
-.box-reverse .sync1-image {
+.box-reverse .sync2-image {
   width: 460px;
-  height: 293px;
-  margin-left: 40px;
+  height: 224px;
+  transform: translateX(55px);
 }
+
 .box-reverse {
   margin-bottom: 70px;
 }
@@ -255,6 +260,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 25px;
+  margin-bottom: 70px;
 }
 
 .cards h4 {
@@ -281,4 +287,326 @@
 
 .cards .card h4 {
   margin-bottom: 17px;
+}
+
+.plans-pricing {
+  display: flex;
+  background: #dde7ed;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.plans {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.plans-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 70px 0;
+}
+
+.plans-info h2 {
+  font-family: "Roboto";
+  font-size: 29px;
+  line-height: 36px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.plans-info p {
+  font-family: "Roboto";
+  font-size: 19px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.plan {
+  display: block;
+  width: 220px;
+  height: 368px;
+  background: #fff;
+  margin-bottom: 20px;
+}
+
+.plan .line {
+  width: 93px;
+  height: 1px;
+  background: #dbdbdb;
+  margin-left: 17px;
+  margin-bottom: 12px;
+}
+
+.plan h3 {
+  font-family: "Roboto";
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 400;
+  padding-left: 20px;
+  padding-top: 16px;
+  margin-bottom: 18px;
+}
+
+.plan .modified {
+  font-family: "Roboto";
+  font-size: 19px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #489fd9;
+}
+
+.plan p:not(.underline) {
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #2b2b2b;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.plan .disable {
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #c7c5c5;
+}
+
+.plan .underline {
+  margin-bottom: 14px;
+  padding-left: 20px;
+}
+
+.plan-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plan-button a {
+  font-family: "Roboto Slab";
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  border: none;
+  color: #fff;
+
+  background-color: #000;
+  padding: 9px 45px;
+  border-radius: 5px;
+  margin-bottom: 17px;
+  margin-top: 5px;
+}
+
+.plans-pricing .contact-us {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #333333;
+  margin-bottom: 70px;
+}
+.plans-pricing .contact-us a {
+  font-family: "Roboto";
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #489fd9;
+}
+
+.about-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+.about-us .about-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-us .about-info h2 {
+  margin-top: 70px;
+  margin-bottom: 45px;
+  font-family: "Roboto";
+  font-size: 29px;
+  line-height: 36px;
+  font-weight: 400;
+  color: #333;
+}
+
+.about-us .about-info .label {
+  margin-bottom: 22px;
+  font-family: "Roboto Slab";
+  font-size: 25px;
+  line-height: 31px;
+  color: #333;
+  max-width: 750px;
+  max-height: 93px;
+  text-align: center;
+}
+
+.kyle-killit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 70px;
+}
+
+.kyle-killit img {
+  margin-bottom: 12px;
+}
+
+.kyle-killit p {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #333;
+}
+
+.partners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #a1bfd4;
+}
+
+.partners img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Аналог background-size: cover */
+  object-position: center; /* Аналог background-position: center */
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #2b2c2e;
+  height: 245px;
+}
+
+.bottom-info {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  position: relative;
+}
+
+.rectangle {
+  display: flex;
+  margin-top: 10px;
+}
+
+.rectangle .gray-box,
+.rectangle .dark-box {
+  height: 40px;
+}
+
+.rectangle .gray-box {
+  width: 190px;
+  background-color: #e8e8e8;
+}
+
+.rectangle .dark-box {
+  width: 130px;
+  background-color: #5f6166;
+}
+
+.rectangle {
+  margin-bottom: 15px;
+}
+
+.bottom-info .logo {
+  font-family: "Roboto Slab";
+  font-size: 27px;
+  font-weight: 400;
+  color: #e6eaed;
+  margin-bottom: 25px;
+}
+
+.bottom-info p {
+  font-family: "Roboto";
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #939596;
+  margin-bottom: 5px;
+}
+
+.bottom-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 75px;
+}
+
+.company-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.product-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.legal-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.company-links .spacing,
+.product-links .spacing,
+.legal-links .spacing {
+  font-family: "Roboto Condensed";
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #e4e8eb;
+  margin-bottom: 11px;
+}
+
+.company-links a:not(.spacing),
+.product-links a:not(.spacing),
+.legal-links a:not(.spacing) {
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #939596;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1c1d1f;
+  height: 22px;
+}
+
+.footer .copyright p {
+  font-family: "Roboto";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #939596;
 }
